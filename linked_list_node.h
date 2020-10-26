@@ -27,7 +27,7 @@ int length(node* head) {
   }
   return count;
 }
-node* atIndex(node* head, int index) {
+node* atIndex(node* head, size_t index) {
   int pos = 0;
   node* current = head;
   while (pos != index) {
@@ -40,7 +40,7 @@ node* atIndex(node* head, int index) {
   }
   return current;
 }
-void setValue(node* head, int index, int value) {
+void setValue(node* head, size_t index, int value) {
   atIndex(head, index)->value = value;
 }
 void push(node* head, int value) {
